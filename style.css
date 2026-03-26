@@ -249,6 +249,8 @@ body{
 }
 .review {
     padding: 80px 100px;
+    max-height: 780px;
+    background-color:#EFEFEF ;
 }
 
 .review h2 {
@@ -261,14 +263,15 @@ body{
     min-height: 500px;
     background: #fff;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .review-card p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.5;
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .review-user {
@@ -277,8 +280,233 @@ body{
     gap: 10px;
 }
 
+.review-user span{
+    font-size: 30px;
+    font-weight:  700;
+    line-height: 101%;
+}
+
 .review-user img {
-    width: 40px;
-    height: 40px;
+    width: 190px;
+    height: 169px;
     border-radius: 50%;
+}
+.price {
+    background: #9DC9C8;
+    padding: 80px 100px;
+}
+
+.price-content h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.price-label {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.price-value {
+    font-size: 80px;
+    margin: 10px 0 30px;
+}
+
+.price-info {
+    display: flex;
+    gap: 50px;
+}
+
+.price-info h4 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.price-info p {
+    font-size: 18px;
+}
+
+.footer {
+    background: #000000;
+    color: #fff;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    margin-bottom: 15px;
+    
+}
+
+.socials img {
+    width: 33px;
+    margin-right: 10px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 101%;
+}
+
+.footer-right img{
+    width: 27px;
+    height: 27px;
+}
+
+/* =========================
+   TABLET (768px)
+========================= */
+@media (max-width: 992px) {
+
+    .maintitle {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .course {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .texts {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .format-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 576px) {
+
+    /* padding azalt */
+    .maintitle,
+    .course,
+    .learn,
+    .program,
+    .review,
+    .price,
+    .format-title,
+    .format-group {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* HEADER */
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img{
+        display: none;
+    }
+
+    /* TITLE */
+    .text .title {
+        font-size: 40px;
+    }
+
+    .text .description {
+        font-size: 16px;
+    }
+
+    /* COURSE TEXT */
+    .course-text h1 {
+        font-size: 30px;
+    }
+
+    .course-text p {
+        font-size: 16px;
+    }
+
+    /* INFO */
+    .info-item h3 {
+        font-size: 18px;
+    }
+
+    /* FORMAT */
+    .format-title h2 {
+        font-size: 30px;
+    }
+
+    /* LEARN */
+    .learn h2 {
+        font-size: 30px;
+    }
+
+    .learn-list li {
+        font-size: 16px;
+    }
+
+    /* CARDS */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-body h3 {
+        font-size: 18px;
+    }
+
+    .card-body p,
+    .card-body span {
+        font-size: 14px;
+    }
+
+    /* REVIEW */
+    .review h2 {
+        font-size: 28px;
+    }
+
+    .review-card {
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .review-user img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* PRICE */
+    .price-content h2 {
+        font-size: 30px;
+    }
+
+    .price-value {
+        font-size: 40px;
+    }
+
+    /* FOOTER */
+    .footer-right p {
+        font-size: 14px;
+    }
 }
